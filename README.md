@@ -1,4 +1,4 @@
-# Shared smart contracts [![Build Status](https://travis-ci.org/ChronoBank/solidity-shared-lib.svg?branch=develop)](https://travis-ci.org/ChronoBank/solidity-shared-lib) [![Coverage Status](https://coveralls.io/repos/github/ChronoBank/solidity-shared-lib/badge.svg?branch=develop)](https://coveralls.io/github/ChronoBank/solidity-shared-lib?branch=develop)
+# Shared smart contracts [![Build Status](https://travis-ci.org/ChronoBank/solidity-shared-lib.svg?branch=master)](https://travis-ci.org/ChronoBank/solidity-shared-lib) [![Coverage Status](https://coveralls.io/repos/github/ChronoBank/solidity-shared-lib/badge.svg?branch=master)](https://coveralls.io/github/ChronoBank/solidity-shared-lib?branch=master)
 
 Part of [LaborX project](https://github.com/ChronoBank). Contains a list of basic smart contracts and interfaces that should be at hands for every developer.
 
