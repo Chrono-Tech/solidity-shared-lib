@@ -1,10 +1,12 @@
 /**
- * Copyright 2017–2018, LaborX PTY
- * Licensed under the AGPL Version 3 license.
- */
+* Copyright 2017–2018, LaborX PTY
+* Licensed under the AGPL Version 3 license.
+*/
 
 pragma solidity ^0.4.23;
 
+
+/// @title Defines an interface for EIP20 token smart contract
 contract ERC20Interface {
     
     event Transfer(address indexed from, address indexed to, uint256 value);

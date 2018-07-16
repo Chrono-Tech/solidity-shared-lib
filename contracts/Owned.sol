@@ -78,6 +78,7 @@ contract Owned {
 
         emit OwnershipTransferred(contractOwner, newOwner);
         contractOwner = newOwner;
+        delete pendingContractOwner;
         return true;
     }
 
@@ -87,11 +88,12 @@ contract Owned {
     public
     onlyContractOwner
     {
+        address _contractOwner = contractOwner;
         for (uint i = 0; i < tokens.length; i++) {
             ERC20Interface token = ERC20Interface(tokens[i]);
             uint balance = token.balanceOf(this);
-            if (balance != 0) {
-                token.transfer(msg.sender, balance);
+            if (balance > 0) {
+                token.transfer(_contractOwner, balance);
             }
         }
     }
@@ -104,7 +106,7 @@ contract Owned {
     {
         uint balance = address(this).balance;
         if (balance > 0)  {
-            msg.sender.transfer(balance);
+            contractOwner.transfer(balance);
         }
     }
 }
